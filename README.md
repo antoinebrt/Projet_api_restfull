@@ -26,7 +26,7 @@ Ce projet utilise Sequelize pour gérer la base de données et JWT pour l'authen
 
 - Node.js
 - Express.js
-- Sequelize (pour la base de données)
+- Sequelize (pour la bdd)
 - JWT (authentification)
 
 
@@ -37,12 +37,4 @@ antoinebrt: Antoine Breteau
 P3ast: Mathis Braux
 
 EitanGrn: Eitan Grinshtein
-
-## Fonctionnalités
-
-- starter: DuPond
-
-- Sécurité: DuPond
-
-```
 
