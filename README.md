@@ -10,7 +10,7 @@ Je décris mon projet
 
 ## Membres
 
-antoinebrt: Antoine Brete
+antoinebrt: Antoine Breteau
 
 
 ## Fonctionnalités
