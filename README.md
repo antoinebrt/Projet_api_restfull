@@ -12,6 +12,9 @@ Je décris mon projet
 
 antoinebrt: Antoine Breteau
 
+P3st: Mathis Braux
+
+Eitangrn: Eitan Grinshtein
 
 ## Fonctionnalités
 
