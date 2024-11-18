@@ -14,7 +14,7 @@ antoinebrt: Antoine Breteau
 
 P3ast: Mathis Braux
 
-Eitangrn: Eitan Grinshtein
+EitanGrn: Eitan Grinshtein
 
 ## Fonctionnalités
 
