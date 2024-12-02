@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-const DbUrl = "mysql://user_a_definir:password_a_definir@localhost:3306/nomBd";
+const DbUrl = "mysql://user_a_definir:mdp_a_definir@localhost:3306/nomBd";
 
 const connection = new Sequelize(
     process.env.DATABASE_URL ?? DbUrl
