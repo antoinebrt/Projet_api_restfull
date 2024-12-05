@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 //const sequelize = require('CheminVersDATABASE');
 const bcrypt = require('bcryptjs');
-// Faut connecter a la bdd quand elle est finis  !
+// Faut connecter a la bdd quand elle est finis !
 // en théorie ça devrait marcher avec les bons require
 
 const User = sequelize.define('User', {
