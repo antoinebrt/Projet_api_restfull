@@ -1,11 +1,13 @@
 const { Sequelize } = require("sequelize");
 
-const DbUrl = "mysql://user_a_definir:mdp_a_definir@localhost:3306/nomBd";
+const DbUrl = "mysql://antoi:mdpintrouvable@localhost:3306/reservation_db";
 
 const connection = new Sequelize(
     process.env.DATABASE_URL ?? DbUrl
 );
 
-connection.authenticate().then(() => console.log("Database is ready"));
+connection.authenticate()
+    .then(() => console.log("Database is ready"))
+    .catch((err) => console.error("Unable to connect to the database:", err));
 
 module.exports = connection;
