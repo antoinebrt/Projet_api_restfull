@@ -36,7 +36,7 @@ P3ast: Mathis Braux
 
 EitanGrn: Eitan Grinshtein
 
-Toute les commandes pour gérer la Base de donnée : (A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
+##Toute les commandes pour gérer la Base de donnée : (A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
 
 1. Authentification
 
