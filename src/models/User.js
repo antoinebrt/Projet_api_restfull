@@ -1,19 +1,17 @@
 const { DataTypes } = require('sequelize');
-//const sequelize = require('CheminVersDATABASE');
+const sequelize = require('../config/database');
 const bcrypt = require('bcryptjs');
-// Faut connecter a la bdd quand elle est finis !
-// en théorie ça devrait marcher avec les bons require
 
 const User = sequelize.define('User', {
-  username: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
   },
   email: {
     type: DataTypes.STRING,
-    allowNull: false,
     unique: true,
+    allowNull: false,
     validate: {
       isEmail: true
     }
@@ -23,7 +21,7 @@ const User = sequelize.define('User', {
     allowNull: false
   },
   role: {
-    type: DataTypes.ENUM('admin', 'user'),
+    type: DataTypes.ENUM('user', 'admin'),
     defaultValue: 'user'
   }
 }, {

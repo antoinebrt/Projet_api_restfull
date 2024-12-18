@@ -6,9 +6,7 @@
 
 ## Description
 
-Cette API RESTful permet de gérer des événements et leurs réservations. 
-Les utilisateurs peuvent consulter les événements disponibles, réserver une place ou annuler une réservation. 
-Les administrateurs ont la possibilité de créer, modifier ou supprimer des événements.
+np
 
 ## Fonctionnalités principales
 
@@ -37,4 +35,49 @@ antoinebrt: Antoine Breteau
 P3ast: Mathis Braux
 
 EitanGrn: Eitan Grinshtein
+
+Toute les commandes pour gérer la Base de donnée : (A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
+
+1. Authentification
+
+- Créer un utilisateur (register)
+curl -X POST -H "Content-Type: application/json" -d '{"email": "monemail@gmail.com", "password": "monMotDePasse123"}' http://localhost:PORT/api/auth/register
+- Se connecter (login)
+curl -X POST -H "Content-Type: application/json" -d '{"email": "monemail@gmail.com", "password": "monMotDePasse123"}' http://localhost:PORT/api/auth/login
+
+2. Gestion des événements
+
+- Récupérer tous les événements
+curl -X GET -H "Authorization: Bearer <TON_TOKEN>" http://localhost:PORT/api/events
+
+- Créer un événement (admin uniquement)
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <TON_TOKEN>" -d '{"name": "Nom de l'événement", "date": "2024-12-31", "categoryId": 1}' http://localhost:PORT/api/events
+
+- Mettre à jour un événement (admin uniquement)
+curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer <TON_TOKEN>" -d '{"name": "Nom modifié", "date": "2024-12-31", "categoryId": 2}' http://localhost:PORT/api/events/1
+
+- Supprimer un événement (admin uniquement)
+curl -X DELETE -H "Authorization: Bearer <TON_TOKEN>" http://localhost:PORT/api/events/1
+
+3. Gestion des réservations
+
+- Créer une réservation
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <TON_TOKEN>" -d '{"eventId": 1, "userId": 2, "status": "confirmed"}' http://localhost:PORT/api/reservations
+
+- Annuler une réservation
+curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer <TON_TOKEN>" -d '{"status": "cancelled"}' http://localhost:PORT/api/reservations/1/cancel
+
+4. Gestion des catégories
+
+- Créer une catégorie (admin uniquement)
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <TON_TOKEN>" -d '{"name": "Nouvelle catégorie"}' http://localhost:PORT/api/categories
+
+- Récupérer toutes les catégories
+curl -X GET -H "Authorization: Bearer <TON_TOKEN>" http://localhost:PORT/api/categories
+
+- Mettre à jour une catégorie (admin uniquement)
+curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer <TON_TOKEN>" -d '{"name": "Catégorie mise à jour"}' http://localhost:PORT/api/categories/1
+
+- Supprimer une catégorie (admin uniquement)
+curl -X DELETE -H "Authorization: Bearer <TON_TOKEN>" http://localhost:PORT/api/categories/1
 
