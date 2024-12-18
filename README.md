@@ -36,9 +36,9 @@ P3ast: Mathis Braux
 
 EitanGrn: Eitan Grinshtein
 
-##Toute les commandes pour gérer la Base de donnée : Sinon utlisé https://sqliteviewer.app/ avec le fichier sqlite
-(A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
-(Les commandes fonctionnes dans gitbash !)
+##Toutes les commandes pour gérer la Base de données : Sinon utliser https://sqliteviewer.app/ avec le fichier sqlite
+(A ne pas oublier npm install, le token secret à mettre pour certaines commandes et le PORT à remplacer)
+(Les commandes fonctionnent dans gitbash !)
 1. Authentification
 
 - Créer un utilisateur (register)
