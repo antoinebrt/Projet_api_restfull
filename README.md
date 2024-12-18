@@ -36,8 +36,9 @@ P3ast: Mathis Braux
 
 EitanGrn: Eitan Grinshtein
 
-##Toute les commandes pour gérer la Base de donnée : (A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
-
+##Toute les commandes pour gérer la Base de donnée :
+(A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
+(Les commandes fonctionnes dans gitbash !)
 1. Authentification
 
 - Créer un utilisateur (register)
