@@ -36,7 +36,7 @@ P3ast: Mathis Braux
 
 EitanGrn: Eitan Grinshtein
 
-##Toute les commandes pour gérer la Base de donnée :
+##Toute les commandes pour gérer la Base de donnée : Sinon utlisé https://sqliteviewer.app/ avec le fichier sqlite
 (A ne pas oublier npm install,Le token secret a mettre pour certaine commandes et le PORT a remplacer)
 (Les commandes fonctionnes dans gitbash !)
 1. Authentification
